@@ -5,14 +5,14 @@ This repository contain daily basis project assigned to the  AI Intern
 
 # Codind standards(PEP8)
 # Docstring
-  -> Class docstring
-  -> Function docstring
+  ->Class docstring
+  ->Function docstring
 # Function annotation
-  -> Return statement
-  -> If the function return nothing then it will return special datatpe none
-  -> Return sttement cannot be used outside the function
+  ->Return statement
+  ->If the function return nothing then it will return special datatpe none
+  ->Return sttement cannot be used outside the function
 # Return sttement with multiple values
-  -> Using tuple
+  ->Using tuple
   -> Using List
   -> Using Class object
   -> Using dictionary
@@ -21,7 +21,7 @@ This repository contain daily basis project assigned to the  AI Intern
 # Typing library 
   A standard library which is used to add typing hints or 
   annotations for python data types or method return types)
-  -> Union (Is used to return the multiple type)
+  ->Union (Is used to return the multiple type)
   -> Optional (Is used to return the Optional value)
   -> Type (Is used to give any type of data)
   -> Dict, List, Set, Tuple
