@@ -30,7 +30,7 @@ This repository contain daily basis project assigned to the  AI Intern
    if we have given a function return type in annotation as str and it return int value 
    then mypy will show type checking error 
    
-  **13-07-2023 Covered Topics Description**
+# 13-07-2023 Covered Topics Description
 **Task** Print a code string each line with a number
 Review the paper from Papers with code
    **Title**: Denoising when Learning to Compress Images 
