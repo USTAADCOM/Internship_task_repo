@@ -1,0 +1,13 @@
+13-07-2023 Covered Topics Description
+-> Task Print a code string each line with a number  
+-> Review the paper
+   Denoising when Learning to Compress Images
+-> Image To Text Hugging face model(microsoft/git-base-coco) review and practice
+   
+
+
+git clone URL
+git add .
+git commit
+git pull
+git push -u origin main

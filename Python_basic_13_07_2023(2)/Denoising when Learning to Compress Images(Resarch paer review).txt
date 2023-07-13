@@ -1,0 +1,72 @@
+Introduction
+____________
+
+1:Noisy images has a ISO number with High noise has high value of ISO
+2:ISO sensitivity setting, but noise is virtually always present to some extent and it is both incompressible and undesirable
+3:A learned lossy image compression
+scheme is trained by forwarding the image through an autoencoder (AE) and backpropagating from the loss, whose components are the bitrate and the distortion [5]. 
+The bitrate is computed from an optimized, i.e. trained, cumulative distribution function, and the distortion quantifies the difference between the output of the 
+autoencoder and the input image, typically by computing the mean square error (MSE).
+4) Image noise does not reflect the physical components of the observed scene. It is a consequence of the imperfect acquisition process, and thereby should be 
+   ignored when possible
+NIND (Natural Image Noise Dataset)
+An open dataset of real photographs with real noise, from identical scenes captured with varying ISO values.
+
+Table of Content:
+________________
+
+Section 1: Introduction to the noise in images and model what to do
+Section 2: summarizes the work on which this paper builds
+Section 3: The main concepts behind our joint denoising and compression supervision are introduced 
+Section 4: The implementation details are given 
+Section 5: Summarizes the impact of the present work.
+
+Section 2:
+_________
+
+Models:
+Different image restoration techniques have been developed to tackle image denoising, including 
+ 1) Wavelet [22, 13] 
+ 2) Non-local means based methods [11], BM3D [15]
+ 3) Recent deeplearning based methods [8, 14, 18, 12].
+->Targeting the reconstruction of a denoised image is the proper way to proceed to get a faithful representation of reality. 
+->The Natural Image Noise Dataset (NIND) [8] and Smartphone Image Denoising Dataset (SIDD) [3] provide sets of clean–noisy image pairs which are appropriate to
+  train a denoising neural network
+-> more recently the idea of learning denoising and compression jointly with neural networks was approached by Testolina et al. [23] in the context of the JPEG 
+  AI codec. The decoder in [23] is extended such that it consists of twice as many layers, and Poissonian-Gaussian noise is applied to the input training data
+-> Training a denoiser with synthetic noise tends to produce a poor model on real data [8, 20]. Testolina et al. introduce a promising joint denoising 
+   and compression (JDC) scheme but the resulting rate-distortion of their model falls short of that obtained using our proposed supervision based on 
+   pairwise naturally noisy / clean images.Best Data Set For Denoising Neural Netwrok
+_________________________________________
+NIND (Natural Image Noise Dataset)
+SIDD (SmartPhone Image Denoising Dataset)
+
+Section 3:
+_________
+
+Four different strategies
+_________________________
+->Four different strategies are envisioned and compared to implement our novel Natural Image Noise Removal (NINR) supervision paradigm.
+  1) Noisy Pairs (JDC-N) (Noisy image from clean–noisy paired dataset [8])
+     Expected output (Clean ground truth)
+  2) Clean and Noisy Pairs (JDC-CN) (Noisy image from clean–noisy paired dataset, clean image from high quality dataset [1])
+     Expected output (Clean ground truth and Clean input)
+  3) Clean and Low-noise Pairs (JDC-Cn) (Weakly noisy image from clean–noisy paired dataset, clean image from a high quality dataset)
+     Expected output (Clean ground truth and Clean input)
+  4) Building Pairs from a Universal Denoiser (JDC-UD) (Arbitrary input image [1, 8] )
+     Expected output (Provided by a Universal Denoiser)
+
+
+Section 4:
+  -> Implementation based on PyTorch
+  -> Data pairs considered in this paper to train a joint denoising and compression model. JDC-Cn is also referred to with its training noise threshold 
+    (e.g. JDC-Cn.8 is trained with MS-SSIM ≥ 0.8, see the text for details).
+
+Autoencode Loss Function
+_______________________
+ Loss x hat + lambda multiply MSE(x hat, x)
+ 
+ -> Balances the rate/distortion trade-off of the model by the lambda
+ -> The combined denoising and compression autoencoder [9] is trained with batches of four noisy images from NIND [8] and one clean image from the 
+    Wikimedia Commons Featured Pictures [1] dataset whose ISO value does not exceed 200, with a crop size of 256. 
+ -> The pre-trained “universal denoiser” used to train the JDC-UD model is the U-Net-like blind denoising model published with NIND
