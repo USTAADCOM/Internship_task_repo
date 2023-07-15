@@ -1,5 +1,5 @@
-# Internship_task_repo
-This repository contain daily basis project assigned to the  AI Intern  
+# Internship_task_repo <br/>
+This repository contain daily basis project assigned to the  AI Intern <br/>  
 
 # 14-07-2023 Covered Topics Description
 # Task 1
