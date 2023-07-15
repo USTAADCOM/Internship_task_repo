@@ -1,7 +1,7 @@
 # Internship_task_repo
 This repository contain daily basis project assigned to the  AI Intern  
 
-#12-07-2023 Covered Topics Description
+**12-07-2023 Covered Topics Description**
 
 # Codind standards(PEP8)
 # Docstring
@@ -29,3 +29,9 @@ This repository contain daily basis project assigned to the  AI Intern
    To check the correctness of our code
    if we have given a function return type in annotation as str and it return int value 
    then mypy will show type checking error 
+   
+# 13-07-2023 Covered Topics Description
+**Task** Print a code string each line with a number
+Review the paper from Papers with code
+   **Title**: Denoising when Learning to Compress Images 
+Image To Text Hugging face **model(microsoft/git-base-coco)** review and practice
