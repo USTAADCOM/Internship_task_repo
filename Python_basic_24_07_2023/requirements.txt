@@ -1,0 +1,33 @@
+Request Object
+The information from a server is received in the form of an object which 
+can be accessed using the request object as it houses all the information 
+such as text data, images, videos, and key-value pairs.
+Attributes of request object
+____________________________
+Form − Houses various Key-Value pairs of form parameters
+args − The URL contents located after the (?)
+Cookies − These are temporary files used to track user sessions as they hold the names and values of cookies.
+Files − data about uploaded files.
+Method − current request method.
+Values: These are combined dictionaries that contain data of both forms and arguments.
+Data:Contains the incoming request data in strings
+Headers: Stores the incoming request as a dictionary-like object 
+Environ: The underlying WSGI environment
+Module: The current module's name if the request was dispatched to an actual module.
+
+Request Methods
+_______________
+GET
+POST
+PUT
+DELETE
+HEAD:
+Retrieves the resources headers, Without the resource itself. This request is like a GET request but it does not return a response body.
+CONNECT:
+Establishes a tunnel to the server identified by the target resource
+OPTIONS:
+Describes the communication options for the target resource.
+TRACE:
+Performs a message loop-back test along the path to the target resource
+PATCH:
+Applies partial modifications to a resource.
