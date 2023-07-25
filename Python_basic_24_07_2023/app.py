@@ -47,12 +47,10 @@ def predict():
     country = request.form.get('country')
     store = request.form.get('store')
     product = request.form.get('product')
-    print()
-    # country = 'Canada'
-    # store = 'Kagglazon'
-    # product = 'Win More Kaggle Competitions'
-    prediction = model.predict(pd.DataFrame(columns=['country', 'store', 'product'], 
-                                            data=np.array([country , store, product]).reshape(1, 3)))
+    print(f"{country} {store} {product}")
+    prediction = model.predict(pd.DataFrame(columns=['country', 'store', 'product'],
+                                            data=np.array([country , store, product])
+                                            .reshape(1, 3)))
     return str(np.round(prediction[0],2))
 
 @app.route('/predictsales', methods = ['GET'])
@@ -75,8 +73,9 @@ def predict_sales():
     country = query['country']
     store = query['store']
     product = query['product']
-    prediction = model.predict(pd.DataFrame(columns=['country', 'store', 'product'], 
-                                            data=np.array([country , store, product]).reshape(1, 3)))
+    prediction = model.predict(pd.DataFrame(columns=['country', 'store', 'product'],
+                                            data=np.array([country , store, product])
+                                            .reshape(1, 3)))
     return str(np.round(prediction[0],2))
 
 if __name__=='__main__':
