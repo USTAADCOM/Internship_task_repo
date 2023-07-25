@@ -1,8 +1,14 @@
-from flask import Flask, render_template, request
+"""
+Main module of flask API
+"""
+from flask import Flask, render_template, request, jsonify, make_response
 from flask_cors import CORS, cross_origin
 import pickle
+import jwt
+import datetime
 import pandas as pd
-import numpy as np
+from modules import predict_module
+SECRET_KEY = 'mysecretkeyishere'
 
 app=Flask(__name__)
 cors=CORS(app)
@@ -28,7 +34,49 @@ def index():
     product = sorted(df['product'].unique(),reverse=True)
     return render_template('index.html', country = country, store = store, product = product)
 
-@app.route('/predict',methods=['POST'])
+
+def get_form_data(request_var)-> list:
+    """
+    method will take the data from the form and after extracting the data return 
+    a list of data.
+    Parameters:
+    ----------
+    None
+
+    Return:
+    ------
+    data: list
+        return the list data containing the data send by the user
+
+    """
+    country = request_var.form.get('country')
+    store = request_var.form.get('store')
+    product = request_var.form.get('product')
+    data = [country, store, product]
+    return data
+
+def get_request_data(request_api)-> list:
+    """
+    method will take the data from the form and after extracting the data return 
+    a list of data.
+    Parameters:
+    ----------
+    None
+
+    Return:
+    ------
+    data: list
+        return the list data containing the data send by the user
+
+    """
+    query = request_api.get_json()
+    country = query["country"]
+    store = query["store"]
+    product = query["product"]
+    data_api = [country, store, product]
+    return data_api
+
+@app.route('/predict',methods = ['POST'])
 @cross_origin()
 def predict():
     """
@@ -44,16 +92,11 @@ def predict():
         return the prediction of the model
 
     """
-    country = request.form.get('country')
-    store = request.form.get('store')
-    product = request.form.get('product')
-    print(f"{country} {store} {product}")
-    prediction = model.predict(pd.DataFrame(columns=['country', 'store', 'product'],
-                                            data=np.array([country , store, product])
-                                            .reshape(1, 3)))
-    return str(np.round(prediction[0],2))
+    data = get_form_data(request)
+    prediction = predict_module.predict_sales(data)
+    return prediction
 
-@app.route('/predictsales', methods = ['GET'])
+@app.route('/predictsales', methods = ['POST'])
 @cross_origin()
 def predict_sales():
     """
@@ -69,14 +112,10 @@ def predict_sales():
         return the prediction of the model
 
     """
-    query = request.args.to_dict(flat=False)
-    country = query['country']
-    store = query['store']
-    product = query['product']
-    prediction = model.predict(pd.DataFrame(columns=['country', 'store', 'product'],
-                                            data=np.array([country , store, product])
-                                            .reshape(1, 3)))
-    return str(np.round(prediction[0],2))
+    # return request.get_json()
+    data = get_request_data(request)
+    prediction = predict_module.predict_sales(data)
+    return prediction
 
 if __name__=='__main__':
     app.run(debug=True)
