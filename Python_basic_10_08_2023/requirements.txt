@@ -1,0 +1,11 @@
+flask
+transformers
+torch
+pyngrok
+flask
+flask-ngrok
+Flask-Cors
+python-dotenv
+flask-socketio
+simple-websocket
+python-socketio
