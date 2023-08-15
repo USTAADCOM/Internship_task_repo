@@ -7,6 +7,7 @@ ChatBot project is desigend where user can communicate with the Chatbot in real 
   https://github.com/USTAADCOM/Internship_task_repo/tree/main/Python_basic_10_08_2023
   
   Download Model From
+  https://drive.google.com/drive/u/0/my-drive
 
 ## Intalltaion
 
