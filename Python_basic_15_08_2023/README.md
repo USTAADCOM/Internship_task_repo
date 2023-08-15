@@ -13,10 +13,10 @@ ChatBot project is desigend where user can communicate with the Chatbot in real 
 ```bash
 pip install -r requiremens.txt
 ```
-# Live Chat with ChatBot with ngrok
+# Live Chat with ChatBot with ngrok on Colab
 open ChatBot_task.ipynb file for live chat
 _______________________________________
-# HardCoded With Sockets 
+# With Sockets on local system 
 Setup project as given above then 
 ```code
 run run.py
