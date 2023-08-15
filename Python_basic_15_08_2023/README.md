@@ -19,5 +19,5 @@ _______________________________________
 # HardCoded With Sockets 
 Setup project as given above then 
 ```code
-run app.py
+run run.py
 ```
