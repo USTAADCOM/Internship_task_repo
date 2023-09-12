@@ -6,7 +6,6 @@ from typing import Any
 from functools import wraps
 import os
 import imghdr
-# from workzeug.utils import secure_filename
 from flask import (
     Flask, request,
     json, make_response, Response
@@ -19,7 +18,6 @@ from modules import predict_module
 app = Flask(__name__)
 cors = CORS(app)
 upload_folder = 'C:/Users/AL RAFIO/Desktop/test_second'
-# app.config['UPLOAD'] = upload
 def authorize(token: str)-> bool:
     """
     method take header token as input and check valid ot not.
@@ -209,7 +207,6 @@ def validate_extension(image: Any)-> bool:
     """
     images_extensions = ['jpg', 'jpeg', 'png']
     image_ex = imghdr.what(image)
-    # print(image_ex)
     if image_ex in images_extensions:
         return True
     return False

@@ -17,7 +17,7 @@ def load_model():
         return the model object loaded from best.pt file.
 
     """
-    model = YOLO("E:/Ekkel AI task practice/Python_basic_27_07_2023/modules/best.pt")
+    model = YOLO("best.pt")
     return model
 
 def detect_objects_on_image(images):
