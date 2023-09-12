@@ -10,19 +10,17 @@ Object Detection Using Yolov8 will take the image as input and return the object
   ```
 ## Project Structure
 ```bash
-AWS_Lambda_API
-   │   lambda_function.py
-   │   test_encryption_decyption.py
-   │   test_frequency_counter.py
-   │   test_pladirme_checker.py
-   │   test_prime_checker.py
-   │   test_word_counter.py
-   ├───module
-       |  ceasrer_cipher_encryption_decryption.py
-       │   pladirme_checker.py
-       │   prime_checker.py
-       │   word_counter.py
-       │   word_frequency_counter.py
+Python_Basic_27_07_2023
+   │   app.py
+   │   best.pt
+   │   DSC-3158-e04b081-leon.jpg
+   │   image-1.png
+   │   image.png
+   │   README.md
+   │   requirements.txt
+   │   yolov8n.pt
+   └───modules
+        predict_module.py
 ```
 
 ## Word Counter 
