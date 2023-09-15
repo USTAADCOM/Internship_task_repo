@@ -1,0 +1,157 @@
+[2023-07-16 11:08:40]config file: OK
+[2023-07-16 11:08:40]file is up to date
+[2023-07-16 11:08:51]file is up to date
+[2023-07-16 11:09:25]config file: OK
+[2023-07-16 11:09:25]file is up to date
+[2023-07-16 11:29:31]config file: OK
+[2023-07-16 11:29:31]file is up to date
+[2023-07-16 11:29:41]file is up to date
+[2023-07-16 11:29:51]file is up to date
+[2023-07-16 11:30:01]folder: ONLINE
+[2023-07-16 11:30:01]backup: ONLINE
+[2023-07-16 11:30:01]test_decrypt.txt is deleted
+[2023-07-16 11:30:01]test_decryption.txt is up to date
+[2023-07-16 11:30:01]test_original_file.txt is up to date
+[2023-07-16 11:30:11]folder: ONLINE
+[2023-07-16 11:30:12]backup: ONLINE
+[2023-07-16 11:30:12]test_decryption.txt is up to date
+[2023-07-16 11:30:12]test_original_file.txt is up to date
+[2023-07-16 11:30:12]test_decrypt.txt is copied
+[2023-07-16 11:32:21]config file: OK
+[2023-07-16 11:32:21]file is up to date
+[2023-07-16 11:32:31]file is up to date
+[2023-07-16 11:32:41]file is up to date
+[2023-07-16 11:32:51]file is up to date
+[2023-07-16 11:33:01]file is up to date
+[2023-07-16 11:33:11]file is up to date
+[2023-07-16 11:33:21]file is up to date
+[2023-07-16 11:33:31]folder: ONLINE
+[2023-07-16 11:33:31]backup: ONLINE
+[2023-07-16 11:33:31]test_decrypt.txt is deleted
+[2023-07-16 11:33:31]test_decryption.txt is up to date
+[2023-07-16 11:33:31]test_original_file.txt is up to date
+[2023-07-16 11:33:41]folder: ONLINE
+[2023-07-16 11:33:41]backup: ONLINE
+[2023-07-16 11:33:41]test_decryption.txt is up to date
+[2023-07-16 11:33:41]test_original_file.txt is up to date
+[2023-07-16 11:33:41]test_decrypt.txt is copied
+[2023-07-16 11:33:51]file is up to date
+[2023-07-16 11:36:03]config file: OK
+[2023-07-16 11:36:03]file is up to date
+[2023-07-16 11:36:13]file is up to date
+[2023-07-16 11:36:23]file is up to date
+[2023-07-16 11:36:33]file is up to date
+[2023-07-16 11:36:43]file is up to date
+[2023-07-16 11:36:53]file is up to date
+[2023-07-16 11:37:03]folder: ONLINE
+[2023-07-16 11:37:03]backup: ONLINE
+[2023-07-16 11:37:03]test_decrypt.txt is deleted
+[2023-07-16 11:37:03]test_decryption.txt is up to date
+[2023-07-16 11:37:03]test_original_file.txt is up to date
+[2023-07-16 11:37:13]file is up to date
+[2023-07-16 11:37:23]folder: ONLINE
+[2023-07-16 11:37:23]backup: ONLINE
+[2023-07-16 11:37:23]test_decryption.txt is up to date
+[2023-07-16 11:37:23]test_original_file.txt is up to date
+[2023-07-16 11:37:23]test_decrypt.txt is copied
+[2023-07-16 11:39:31]config file: OK
+[2023-07-16 11:39:31]file is up to date
+[2023-07-16 11:39:41]file is up to date
+[2023-07-16 11:40:21]config file: OK
+[2023-07-16 11:42:42]config file: OK
+[2023-07-16 11:46:10]config file: OK
+[2023-07-16 11:48:08]config file: OK
+[2023-07-16 11:48:32]config file: OK
+[2023-07-16 11:51:14]config file: OK
+[2023-07-16 11:54:25]config file: OK
+[2023-07-16 11:56:09]config file: OK
+[2023-07-16 11:57:25]config file: OK
+[2023-07-16 11:59:09]config file: OK
+[2023-07-16 11:59:17]config file: OK
+[2023-07-16 12:00:02]config file: OK
+[2023-07-16 12:04:28]config file: OK
+[2023-07-16 12:09:23]config file: OK
+[2023-07-16 12:09:57]config file: OK
+[2023-07-16 12:10:41]config file: OK
+[2023-07-16 12:11:32]config file: OK
+[2023-07-16 12:12:09]config file: OK
+[2023-07-16 12:15:34]config file: OK
+[2023-07-16 13:01:25]config file: OK
+[2023-07-16 13:02:07]config file: OK
+[2023-07-16 13:07:39]config file: OK
+[2023-07-16 13:12:33]config file: OK
+[2023-07-16 13:13:25]config file: OK
+[2023-07-16 13:13:25]folder: ONLINE
+[2023-07-16 13:13:25]backup: ONLINE
+[2023-07-16 13:13:25]test_decryption.txt is copied
+[2023-07-16 13:13:25]test_encrytion.txt is copied
+[2023-07-16 13:13:25]test_original_file.txt is copied
+[2023-07-16 13:13:35]file is up to date
+[2023-07-16 13:13:46]file is up to date
+[2023-07-16 13:13:56]file is up to date
+[2023-07-16 13:16:01]config file: OK
+[2023-07-16 13:16:01]folder: ONLINE
+[2023-07-16 13:16:01]backup: ONLINE
+[2023-07-16 13:16:01]test_decryption.txt is copied
+[2023-07-16 13:16:01]test_encrytion.txt is copied
+[2023-07-16 13:16:01]test_original_file.txt is copied
+[2023-07-16 13:16:11]file is up to date
+[2023-07-16 13:16:21]folder: ONLINE
+[2023-07-16 13:16:21]backup: ONLINE
+[2023-07-16 13:16:21]test_decryption.txt is up to date
+[2023-07-16 13:16:21]test_encrytion.txt is up to date
+[2023-07-16 13:16:21]test_original_file.txt is deleted
+[2023-07-16 13:16:31]folder: ONLINE
+[2023-07-16 13:16:31]backup: ONLINE
+[2023-07-16 13:16:31]test_decryption.txt is up to date
+[2023-07-16 13:16:31]test_encrytion.txt is up to date
+[2023-07-16 13:16:31]test_original_file.txt is copied
+[2023-07-16 14:29:01]config file: OK
+[2023-07-16 14:29:02]file is up to date
+[2023-07-16 14:29:12]file is up to date
+[2023-07-16 14:29:22]folder: Exist
+[2023-07-16 14:29:22]backup: Exist
+[2023-07-16 14:29:22]test_decryption.txt is up to date
+[2023-07-16 14:29:22]test_encrytion.txt is up to date
+[2023-07-16 14:29:22]test_original_file.txt is deleted
+[2023-07-16 14:29:32]file is up to date
+[2023-07-16 14:29:42]folder: Exist
+[2023-07-16 14:29:42]backup: Exist
+[2023-07-16 14:29:42]test_decryption.txt is up to date
+[2023-07-16 14:29:42]test_encrytion.txt is up to date
+[2023-07-16 14:29:42]test_original_file.txt is copied
+[2023-07-16 14:29:52]file is up to date
+[2023-07-16 14:30:02]folder: Exist
+[2023-07-16 14:30:02]backup: Exist
+[2023-07-16 14:30:02]test_decryption.txt is up to date
+[2023-07-16 14:30:02]test_encrytion.txt is updated
+[2023-07-16 14:30:02]test_original_file.txt is up to date
+[2023-07-16 14:30:12]file is up to date
+[2023-07-17 10:41:51]config file: OK
+[2023-07-17 10:41:51]file is up to date
+[2023-07-17 10:42:01]file is up to date
+[2023-07-17 10:42:11]file is up to date
+[2023-07-17 10:42:21]file is up to date
+[2023-07-17 10:42:31]file is up to date
+[2023-07-17 10:42:41]folder: Exist
+[2023-07-17 10:42:41]backup: Exist
+[2023-07-17 10:42:41]test_decryption.txt is up to date
+[2023-07-17 10:42:41]test_encrytion.txt is copied
+[2023-07-17 10:42:41]test_original_file.txt is copied
+[2023-07-17 10:42:51]folder: Exist
+[2023-07-17 10:42:51]backup: Exist
+[2023-07-17 10:42:51]test_decryption.txt is up to date
+[2023-07-17 10:42:51]test_encrytion.txt is deleted
+[2023-07-17 10:42:51]test_original_file.txt is deleted
+[2023-07-17 10:43:01]file is up to date
+[2023-07-17 10:43:12]folder: Exist
+[2023-07-17 10:43:12]backup: Exist
+[2023-07-17 10:43:12]test_decryption.txt is up to date
+[2023-07-17 10:43:12]test_encrytion.txt is copied
+[2023-07-17 10:43:12]test_original_file.txt is copied
+[2023-07-17 10:43:22]folder: Exist
+[2023-07-17 10:43:22]backup: Exist
+[2023-07-17 10:43:22]test_decryption.txt is up to date
+[2023-07-17 10:43:22]test_encrytion.txt is up to date
+[2023-07-17 10:43:22]test_original_file.txt is updated
+[2023-07-17 10:43:32]file is up to date

@@ -1,0 +1,2 @@
+folder:C:\Users\AL RAFIO\Desktop\test_first
+backup:C:\Users\AL RAFIO\Desktop\test_second
